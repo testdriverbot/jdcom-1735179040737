@@ -1,0 +1,17 @@
+version: 4.1.32
+steps:
+  - prompt: Open the browser and navigate to the website.
+    commands:
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Assert that the webpage loads.
+    commands:
+      - command: assert
+        expect: Example Domain text is visible on the page
+  - prompt: >-
+      Assert that the logo is displayed.  # Use the content of the file from the
+      environment
+    commands:
+      - command: assert
+        expect: logo is visible on the page
