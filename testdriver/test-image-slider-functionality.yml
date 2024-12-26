@@ -1,0 +1,24 @@
+version: 4.1.32
+steps:
+  - prompt: Locate the image slider on the homepage.
+    commands:
+      - command: scroll
+        direction: down
+      - command: hover-image
+        description: right navigation arrow on the image slider
+        action: click
+  - prompt: Click the navigation arrows or dots.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-image
+        description: right navigation arrow on the image slider
+        action: click
+  - prompt: Click the navigation arrows or dots.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: •
+        description: navigation dot below the image slider
+        action: click
