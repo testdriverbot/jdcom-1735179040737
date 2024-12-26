@@ -1,0 +1,22 @@
+version: 4.1.32
+steps:
+  - prompt: Review each link in the navigation bar.
+    commands:
+      - command: hover-text
+        text: ABOUT US
+        description: navigation link for About Us
+        action: click
+  - prompt: Review each link in the navigation bar.
+    commands:
+      - command: hover-text
+        text: NEWS
+        description: navigation link for News
+        action: click
+      - command: hover-text
+        text: Blog
+        description: navigation link for Blog
+        action: click
+      - command: hover-text
+        text: FOR PARTNERS
+        description: navigation link for For Partners
+        action: click
